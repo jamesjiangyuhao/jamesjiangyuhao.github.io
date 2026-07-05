@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>James Jiang — Analytics Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio website for James Jiang, focused on insurance analytics, product analytics, data products, and decision-support dashboards."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top">James Jiang</a>
+      <nav aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" id="about">
+        <div class="eyebrow">Analytics · Insurance · Data Products</div>
+        <h1>James Jiang</h1>
+        <h2>Decision-focused analytics work, built from clean metrics and clear business context.</h2>
+        <p>
+          I build analytics workflows that turn messy operational and insurance data into usable monitoring tools.
+          My work focuses on metric design, segment-level diagnostics, dashboard development, and business storytelling.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">View projects</a>
+          <a class="button secondary" href="https://github.com/jamesjiangyuhao">GitHub</a>
+        </div>
+        <dl class="quick-facts" aria-label="Profile summary">
+          <div>
+            <dt>Focus</dt>
+            <dd>Product analytics</dd>
+          </div>
+          <div>
+            <dt>Domain</dt>
+            <dd>Insurance analytics</dd>
+          </div>
+          <div>
+            <dt>Tools</dt>
+            <dd>Python · SQL · BI</dd>
+          </div>
+          <div>
+            <dt>Output</dt>
+            <dd>Dashboards · insights</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-heading">
+          <p class="eyebrow">Projects</p>
+          <h3>Featured work</h3>
+        </div>
+
+        <article class="project-card">
+          <div class="project-copy">
+            <p class="project-type">Synthetic insurance analytics case study</p>
+            <h4>Interactive Loss Performance Monitoring for a Simulated Personal Auto Book</h4>
+            <p>
+              A complete Streamlit analytics application for monitoring comprehensive coverage performance across
+              premium, claims, loss categories, geography, vehicle segments, sales channel, business type, catastrophe
+              indicator, and monthly period.
+            </p>
+            <div class="tag-list">
+              <span>Python</span>
+              <span>pandas</span>
+              <span>Streamlit</span>
+              <span>Plotly</span>
+              <span>Metric Design</span>
+              <span>Insurance Analytics</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/jamesjiangyuhao/auto-loss-performance-monitoring">GitHub Repo</a>
+              <a href="https://github.com/jamesjiangyuhao/auto-loss-performance-monitoring#interactive-loss-performance-monitoring-for-a-simulated-personal-auto-book">README</a>
+            </div>
+          </div>
+          <div class="project-visual" aria-label="Loss ratio dashboard preview">
+            <img src="assets/loss_ratio_trend.png" alt="Monthly loss ratio trend chart" />
+          </div>
+        </article>
+
+        <div class="insight-grid">
+          <article>
+            <h4>Metric design</h4>
+            <p>
+              Defines loss ratio, claim frequency, severity, earned premium, on-level premium, and claim mix in a reusable
+              metric layer.
+            </p>
+          </article>
+          <article>
+            <h4>Segment diagnostics</h4>
+            <p>
+              Ranks vehicle make/model, state, channel, and business-type segments with claim-count credibility controls.
+            </p>
+          </article>
+          <article>
+            <h4>Business interpretation</h4>
+            <p>
+              Converts filtered results into short stakeholder-oriented insights about geography, vehicle mix, catastrophe
+              impact, and channel performance.
+            </p>
+          </article>
+        </div>
+
+        <div class="image-strip" aria-label="Project output examples">
+          <img src="assets/claim_mix_by_category.png" alt="Claim mix by category chart" />
+          <img src="assets/top_segments.png" alt="Top vehicle segments by loss ratio chart" />
+        </div>
+      </section>
+
+      <section class="section two-column" id="skills">
+        <div class="section-heading">
+          <p class="eyebrow">Capabilities</p>
+          <h3>Technical skills</h3>
+        </div>
+        <div class="skills-list">
+          <div>
+            <h4>Analytics engineering</h4>
+            <p>SQL-style data modeling, Python data manipulation, reusable metric layers, validation checks.</p>
+          </div>
+          <div>
+            <h4>Product analytics</h4>
+            <p>Metric design, segmentation, cohort-style comparisons, performance monitoring, stakeholder narratives.</p>
+          </div>
+          <div>
+            <h4>Insurance analytics</h4>
+            <p>Loss ratio monitoring, claim frequency, severity analysis, catastrophe-aware views, credibility filters.</p>
+          </div>
+          <div>
+            <h4>Data products</h4>
+            <p>Streamlit apps, Plotly charts, dashboard UX, parameterized workflows, GitHub portfolio packaging.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <p class="eyebrow">Contact</p>
+        <h3>Let's connect.</h3>
+        <p>
+          I am interested in analytics roles where business judgment, careful metrics, and clear communication matter.
+        </p>
+        <div class="contact-links">
+          <a href="https://github.com/jamesjiangyuhao">GitHub</a>
+          <a href="mailto:111542545+jamesjiangyuhao@users.noreply.github.com">Email</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

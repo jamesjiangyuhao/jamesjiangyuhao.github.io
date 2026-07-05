@@ -3,18 +3,19 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>James Jiang — Analytics Portfolio</title>
+    <title>Yuhao (James) Jiang — Analytics Portfolio</title>
     <meta
       name="description"
-      content="Portfolio website for James Jiang, focused on insurance analytics, product analytics, data products, and decision-support dashboards."
+      content="Portfolio website for Yuhao (James) Jiang, focused on insurance analytics, product analytics, data products, and decision-support dashboards."
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#top">James Jiang</a>
+      <a class="brand" href="#top">Yuhao Jiang</a>
       <nav aria-label="Primary navigation">
         <a href="#about">About</a>
+        <a href="#education">Education</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
@@ -23,35 +24,74 @@
 
     <main id="top">
       <section class="hero" id="about">
-        <div class="eyebrow">Analytics · Insurance · Data Products</div>
-        <h1>James Jiang</h1>
-        <h2>Decision-focused analytics work, built from clean metrics and clear business context.</h2>
-        <p>
-          I build analytics workflows that turn messy operational and insurance data into usable monitoring tools.
-          My work focuses on metric design, segment-level diagnostics, dashboard development, and business storytelling.
-        </p>
-        <div class="hero-actions">
-          <a class="button primary" href="#projects">View projects</a>
-          <a class="button secondary" href="https://github.com/jamesjiangyuhao">GitHub</a>
+        <div class="hero-copy">
+          <div class="eyebrow">Analytics · Insurance · Data Products</div>
+          <h1>Yuhao (James) Jiang</h1>
+          <h2>Data-driven product analytics, built for decisions that have to hold up.</h2>
+          <p>
+            I am an analytics professional focused on insurance product analytics, monitoring dashboards,
+            predictive modeling, and business-facing decision support. I like work that sits close to the question:
+            what changed, why did it change, and what should the business do next?
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">View projects</a>
+            <a class="button secondary" href="#contact">Get in touch</a>
+          </div>
         </div>
-        <dl class="quick-facts" aria-label="Profile summary">
-          <div>
-            <dt>Focus</dt>
-            <dd>Product analytics</dd>
-          </div>
-          <div>
-            <dt>Domain</dt>
-            <dd>Insurance analytics</dd>
-          </div>
-          <div>
-            <dt>Tools</dt>
-            <dd>Python · SQL · BI</dd>
-          </div>
-          <div>
-            <dt>Output</dt>
-            <dd>Dashboards · insights</dd>
-          </div>
-        </dl>
+        <aside class="profile-panel" aria-label="Profile card">
+          <img class="headshot" src="assets/yuhao-jiang-headshot.jpg" alt="Yuhao Jiang professional headshot" />
+          <dl class="quick-facts">
+            <div>
+              <dt>Now</dt>
+              <dd>Product Analyst II</dd>
+            </div>
+            <div>
+              <dt>Based</dt>
+              <dd>New York, NY</dd>
+            </div>
+            <div>
+              <dt>Studied</dt>
+              <dd>UCLA MSBA</dd>
+            </div>
+            <div>
+              <dt>Focus</dt>
+              <dd>Analytics · ML · dashboards</dd>
+            </div>
+          </dl>
+        </aside>
+      </section>
+
+      <section class="section two-column" id="education">
+        <div class="section-heading">
+          <p class="eyebrow">Background</p>
+          <h3>Education & experience</h3>
+        </div>
+        <div class="timeline">
+          <article>
+            <span>2024 - Present</span>
+            <h4>Product Analyst II · Personal insurance analytics</h4>
+            <p>
+              Builds SQL/Python monitoring workflows, product impact analyses, risk segmentation tools, and
+              decision-support dashboards for pricing, guideline, and performance monitoring.
+            </p>
+          </article>
+          <article>
+            <span>2022 - 2023</span>
+            <h4>UCLA Anderson School of Management · MS in Business Analytics</h4>
+            <p>
+              Coursework included product management, customer analytics, competitive analytics, prescriptive models,
+              and data analytics.
+            </p>
+          </article>
+          <article>
+            <span>2018 - 2022</span>
+            <h4>New York University · Mathematics and Economics</h4>
+            <p>
+              Bachelor of Arts with a Computer Science minor, combining quantitative modeling, economics, and
+              programming fundamentals.
+            </p>
+          </article>
+        </div>
       </section>
 
       <section class="section" id="projects">
@@ -62,7 +102,7 @@
 
         <article class="project-card">
           <div class="project-copy">
-            <p class="project-type">Synthetic insurance analytics case study</p>
+            <p class="project-type">Featured analytics project</p>
             <h4>Interactive Loss Performance Monitoring for a Simulated Personal Auto Book</h4>
             <p>
               A complete Streamlit analytics application for monitoring comprehensive coverage performance across
@@ -79,7 +119,7 @@
             </div>
             <div class="project-links">
               <a href="https://github.com/jamesjiangyuhao/auto-loss-performance-monitoring">GitHub Repo</a>
-              <a href="https://github.com/jamesjiangyuhao/auto-loss-performance-monitoring#interactive-loss-performance-monitoring-for-a-simulated-personal-auto-book">README</a>
+              <a href="https://github.com/jamesjiangyuhao/auto-loss-performance-monitoring#interactive-loss-performance-monitoring-for-a-simulated-personal-auto-book">Project README</a>
             </div>
           </div>
           <div class="project-visual" aria-label="Loss ratio dashboard preview">
@@ -124,11 +164,15 @@
         <div class="skills-list">
           <div>
             <h4>Analytics engineering</h4>
-            <p>SQL-style data modeling, Python data manipulation, reusable metric layers, validation checks.</p>
+            <p>SQL data extraction, Python data manipulation, reusable metric layers, validation checks.</p>
           </div>
           <div>
             <h4>Product analytics</h4>
             <p>Metric design, segmentation, cohort-style comparisons, performance monitoring, stakeholder narratives.</p>
+          </div>
+          <div>
+            <h4>Modeling</h4>
+            <p>Predictive modeling, risk segmentation, gradient boosting workflows, model validation, business framing.</p>
           </div>
           <div>
             <h4>Insurance analytics</h4>
@@ -149,7 +193,8 @@
         </p>
         <div class="contact-links">
           <a href="https://github.com/jamesjiangyuhao">GitHub</a>
-          <a href="mailto:111542545+jamesjiangyuhao@users.noreply.github.com">Email</a>
+          <a href="https://www.linkedin.com/in/yuhao-jiang/">LinkedIn</a>
+          <a href="mailto:jamesjiangyuhao@gmail.com">Email</a>
         </div>
       </section>
     </main>

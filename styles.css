@@ -261,6 +261,10 @@ h3 {
   box-shadow: var(--shadow);
 }
 
+.project-card + .project-card {
+  margin-top: 22px;
+}
+
 .project-copy {
   display: flex;
   flex-direction: column;

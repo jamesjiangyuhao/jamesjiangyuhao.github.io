@@ -346,6 +346,10 @@ h5 {
   align-self: center;
 }
 
+.project-gallery.equal-gallery {
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+}
+
 .project-gallery-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -360,10 +364,21 @@ h5 {
   background: #f8fafc;
 }
 
+.equal-gallery .project-visual {
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .project-visual img {
   width: 100%;
   height: auto;
   object-fit: contain;
+}
+
+.equal-gallery .project-visual img {
+  height: 100%;
 }
 
 .skills-list div {

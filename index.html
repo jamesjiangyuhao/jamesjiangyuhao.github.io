@@ -121,9 +121,42 @@
               <a href="https://github.com/jamesjiangyuhao/auto-loss-performance-monitoring">GitHub Repo</a>
               <a href="https://github.com/jamesjiangyuhao/auto-loss-performance-monitoring#interactive-loss-performance-monitoring-for-a-simulated-personal-auto-book">Project README</a>
             </div>
+            <div class="project-notes" aria-label="Loss performance monitor details">
+              <article>
+                <h5>Model Design</h5>
+                <p>
+                  Defines reusable metrics for loss ratio, claim frequency, severity, earned premium,
+                  on-level premium, and claim mix with synthetic credibility controls.
+                </p>
+              </article>
+              <article>
+                <h5>Segment Diagnostics</h5>
+                <p>
+                  Ranks vehicle make/model, geography, channel, and business type to separate normal
+                  performance movement from concentrated adverse segments.
+                </p>
+              </article>
+              <article>
+                <h5>Business Interpretation</h5>
+                <p>
+                  Converts dashboard outputs into concise stakeholder insights about theft mix,
+                  vehicle concentration, catastrophe effects, and monitoring priorities.
+                </p>
+              </article>
+            </div>
           </div>
-          <div class="project-visual" aria-label="Loss ratio dashboard preview">
-            <img src="assets/loss_ratio_trend.png" alt="Monthly loss ratio trend chart" />
+          <div class="project-gallery" aria-label="Loss performance dashboard previews">
+            <div class="project-visual">
+              <img src="assets/loss_ratio_trend.png" alt="Monthly loss ratio trend chart" />
+            </div>
+            <div class="project-gallery-grid">
+              <div class="project-visual">
+                <img src="assets/claim_mix_by_category.png" alt="Claim mix by category chart" />
+              </div>
+              <div class="project-visual">
+                <img src="assets/top_segments.png" alt="Top vehicle segments by loss ratio chart" />
+              </div>
+            </div>
           </div>
         </article>
 
@@ -153,36 +186,6 @@
             <img src="assets/geospatial_hex_confidence_map.png" alt="Hex grid map colored by default value confidence level" />
           </div>
         </article>
-
-        <div class="insight-grid">
-          <article>
-            <h4>Metric design</h4>
-            <p>
-              Defines loss ratio, claim frequency, severity, earned premium, on-level premium, and claim mix in a reusable
-              metric layer.
-            </p>
-          </article>
-          <article>
-            <h4>Segment diagnostics</h4>
-            <p>
-              Ranks vehicle make/model, state, channel, and business-type segments with claim-count credibility controls.
-            </p>
-          </article>
-          <article>
-            <h4>Business interpretation</h4>
-            <p>
-              Converts filtered results into short stakeholder-oriented insights about geography, vehicle mix, catastrophe
-              impact, and channel performance.
-            </p>
-          </article>
-        </div>
-
-        <div class="image-strip" aria-label="Project output examples">
-          <img src="assets/claim_mix_by_category.png" alt="Claim mix by category chart" />
-          <img src="assets/top_segments.png" alt="Top vehicle segments by loss ratio chart" />
-          <img src="assets/geospatial_coverage_confidence_curve.png" alt="Coverage versus confidence threshold chart" />
-          <img src="assets/geospatial_confusion_matrix.png" alt="Confusion matrix for geospatial random forest model" />
-        </div>
       </section>
 
       <section class="section two-column" id="skills">

@@ -182,7 +182,7 @@ h2 {
 }
 
 .quick-facts div,
-.insight-grid article,
+.project-notes article,
 .skills-list div,
 .timeline article,
 .contact {
@@ -287,8 +287,15 @@ h4 {
   letter-spacing: 0;
 }
 
+h5 {
+  margin: 0 0 6px;
+  font-size: 0.92rem;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
 .project-copy p,
-.insight-grid p,
+.project-notes p,
 .skills-list p,
 .contact p {
   color: var(--muted);
@@ -318,6 +325,33 @@ h4 {
   font-weight: 780;
 }
 
+.project-notes {
+  display: grid;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.project-notes article {
+  padding: 14px;
+}
+
+.project-notes p {
+  margin-bottom: 0;
+  font-size: 0.92rem;
+}
+
+.project-gallery {
+  display: grid;
+  gap: 14px;
+  align-self: center;
+}
+
+.project-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
 .project-visual {
   align-self: center;
   overflow: hidden;
@@ -328,33 +362,12 @@ h4 {
 
 .project-visual img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
 }
 
-.insight-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
-  margin-top: 20px;
-}
-
-.insight-grid article,
 .skills-list div {
   padding: 22px;
-}
-
-.image-strip {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
-  margin-top: 20px;
-}
-
-.image-strip img {
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--panel);
 }
 
 .two-column {
@@ -393,8 +406,7 @@ h4 {
 
   .quick-facts,
   .project-card,
-  .insight-grid,
-  .image-strip,
+  .project-gallery-grid,
   .two-column,
   .skills-list {
     grid-template-columns: 1fr;

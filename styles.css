@@ -365,10 +365,7 @@ h5 {
 }
 
 .equal-gallery .project-visual {
-  height: 220px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
 }
 
 .project-visual img {
@@ -378,7 +375,7 @@ h5 {
 }
 
 .equal-gallery .project-visual img {
-  height: 100%;
+  height: auto;
 }
 
 .skills-list div {

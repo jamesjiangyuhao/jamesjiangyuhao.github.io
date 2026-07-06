@@ -190,19 +190,20 @@
         <article class="project-card">
           <div class="project-copy">
             <p class="project-type">Machine learning research project</p>
-            <h4>Interpretable Gradient Boosting on an Imbalanced Binary Classification Problem</h4>
+            <h4>Early Water Loss Segmentation with Gradient Boosting and Explainability</h4>
             <p>
-              A fully synthetic supervised learning workflow for rare-event binary classification, combining cohort
-              filtering, class-imbalance handling, gradient boosting, threshold analysis, explainability, partial
-              dependence, and a lightweight lookup-based scoring artifact.
+              A rare-event modeling and segmentation study focused on identifying business segments associated with
+              disproportionate early non-weather water losses. The workflow combined under-sampling, gradient boosting,
+              SHAP-based driver analysis, and partial-dependence scoring to test whether model signals could translate
+              into practical blocking recommendations.
             </p>
             <div class="tag-list">
               <span>Python</span>
               <span>scikit-learn</span>
               <span>Gradient Boosting</span>
-              <span>Imbalanced Classification</span>
-              <span>Explainability</span>
-              <span>Streamlit</span>
+              <span>SHAP</span>
+              <span>Partial Dependence</span>
+              <span>Segmentation Analysis</span>
             </div>
             <div class="project-links">
               <a href="https://github.com/jamesjiangyuhao/interpretable-imbalanced-classification">GitHub Repo</a>
@@ -212,39 +213,43 @@
               <article>
                 <h5>Model Design</h5>
                 <p>
-                  Trains a gradient boosting classifier on filtered synthetic tabular data, with optional
-                  undersampling to address a low positive-class rate.
+                  Built subset-level gradient boosting models with under-sampling and parameter tuning to handle an
+                  extremely imbalanced early-loss target.
                 </p>
               </article>
               <article>
-                <h5>Evaluation Strategy</h5>
+                <h5>Driver Interpretation</h5>
                 <p>
-                  Uses precision, recall, F1, ROC-AUC, PR-AUC, confusion matrix, and threshold sensitivity
-                  instead of relying on accuracy alone.
+                  Used SHAP to identify features that persistently moved predictions as the early-loss window expanded
+                  from shorter to longer observation periods.
                 </p>
               </article>
               <article>
-                <h5>Explainability Layer</h5>
+                <h5>Business Decisioning</h5>
                 <p>
-                  Converts top model drivers into partial-dependence-inspired lookup buckets and compares the
-                  simplified score against full model probability.
+                  Converted top drivers into a partial-dependence scoring system, then stress-tested whether the
+                  score separated early-loss policies well enough to support blocking.
+                </p>
+              </article>
+              <article>
+                <h5>Future Enhancement</h5>
+                <p>
+                  With more historical observations, the model can improve accuracy, reduce PD score overlap, and make
+                  future segmentation recommendations more reliable.
                 </p>
               </article>
             </div>
           </div>
-          <div class="project-gallery" aria-label="Interpretable classification dashboard previews">
+          <div class="project-gallery" aria-label="Early water loss modeling presentation previews">
             <div class="project-visual">
-              <img src="assets/imbalanced_model_vs_lookup_score.png" alt="Full model probability versus lookup score scatter plot" />
+              <img src="assets/early_water_state_problem.png" alt="Synthetic state-level early water loss concentration chart" />
             </div>
             <div class="project-gallery-grid">
               <div class="project-visual">
-                <img src="assets/imbalanced_feature_importance.png" alt="Top feature importance chart for imbalanced classification model" />
+                <img src="assets/early_water_shap_strength.png" alt="Synthetic SHAP value chart showing top predictive features" />
               </div>
               <div class="project-visual">
-                <img src="assets/imbalanced_precision_recall_curve.png" alt="Precision recall curve for imbalanced classification model" />
-              </div>
-              <div class="project-visual">
-                <img src="assets/imbalanced_partial_dependence.png" alt="Partial dependence plots for top features" />
+                <img src="assets/early_water_pd_overlap.png" alt="Synthetic partial dependence score overlap chart showing over-blocking risk" />
               </div>
             </div>
           </div>
